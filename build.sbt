@@ -4,7 +4,7 @@ version := "1.0"
 
 scalaOrganization := "org.typelevel"
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
   "org.typelevel" %% "cats" % "0.9.0",
@@ -14,8 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.1" % Test
 )
 
-addCompilerPlugin(
-  "org.scalameta" % "paradise" % "3.0.0-M7" cross CrossVersion.full)
+addCompilerPlugin("org.scalameta" % "paradise" % "3.0.0-M7" cross CrossVersion.full)
 
 addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
 
